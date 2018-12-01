@@ -1,0 +1,212 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+
+/*Main body styles */
+#main {
+	min-height: 100%;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-self: center;
+}
+#background-div {
+	margin-top: 40px;
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+	width: 100%;
+	background-color: rgba(255, 255, 255);
+	align-self: center;
+	margin-bottom: 40px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 48px 0px rgba(0,0,0,0.75);
+}
+#title {
+	font-size: 24;
+}
+
+#image {
+	max-width: 100%;
+}
+/* pick trans*/
+#image {
+	-webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.5s; /* Firefox < 16 */
+        -ms-animation: fadein 1.5s; /* Internet Explorer */
+         -o-animation: fadein 1.5s; /* Opera < 12.1 */
+            animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#image p.load {
+	opacity: 1;
+}
+#heading {
+	flex-direction: column;
+	display: flex;
+	align-self: center;
+	text-align: center;
+	flex-grow: 1;
+}
+
+#img-div {
+	max-width:100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#tribute-info {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	margin-bottom: 40px;
+	width: 90%;
+}
+#article-title {
+	text-align: center;
+	margin-top: 30px;
+}
+.profilePic {
+	border-radius: 50%;
+	margin-right: 15px;
+}
+#author {
+	display: flex;
+	font-size: 13px;
+    line-height: 150%;
+    font-weight: 700;
+    max-width: 700px;
+    clear: both;
+    overflow: hidden;
+	flex-direction: row;
+	margin-top: 20px;
+}
+#authorinfo {
+	display: flex;
+	align-content: center;
+}
+.main_text {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-content: space-around;
+}
+
+#rockcraft {
+	align-self: center;
+	display: flex;
+	flex-shrink: 2;
+	margin-top: 17px;
+	margin-bottom: 17px;
+}
+#media{
+	display: none;
+}
+/* Media queries */
+
+@media (min-width: 769px) {
+#main {
+	background-image: url("beautiful-cliffs-cloud-144251.jpg");
+	min-height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+		/*
+			fixed = parralax
+			scroll = normal
+			
+		*/
+	background-attachment: fixed;
+}
+#image {
+	max-width: 100%;
+	}
+#img-div {
+	width: 65%
+}
+.main_text {
+	width: 65%;
+	font-size: 18px;
+}
+.main-header {
+	flex-direction: column;
+	align-items: center;
+}
+#background-div {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	background-color: white;
+	align-self: center;
+	background-color: rgba(255, 255, 255, 0.89);
+}
+#media{
+display: flex;
+align-self: center;
+margin-bottom: 100px;
+}
+}
+
+@media (min-width: 1025px) {
+
+
+#title {
+	font-size: 50px;
+}
+.main_text {
+	width: 50%
+}
+#author {
+	padding-left: 60px;
+}
+#img-div {
+	width: 50%
+}
+}
+
